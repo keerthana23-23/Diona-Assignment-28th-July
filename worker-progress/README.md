@@ -44,7 +44,6 @@ The form displays claim information and worker progress details using sample dat
 
 Video Link: https://drive.google.com/file/d/12qAed_C27fT86CbbHjwya12b5H65Artl/view?usp=drive_link
 
-(Paste your YouTube or Google Drive link here)
 
 ## Author
 
