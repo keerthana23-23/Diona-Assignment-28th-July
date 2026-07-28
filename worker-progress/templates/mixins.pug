@@ -1,0 +1,23 @@
+// Shared PUG Mixins
+
+mixin wcbHeader(title, claimNumber)
+
+  header.form-header
+
+    h1= title
+
+    .claim-box
+      Claim No. #{claimNumber}
+
+mixin pageFooter(pageLabel)
+
+  footer.form-footer
+
+    span.page-number= pageLabel
+
+mixin expenseTable(title)
+
+  h2.section-title= title
+
+  table.data-table
+    block
