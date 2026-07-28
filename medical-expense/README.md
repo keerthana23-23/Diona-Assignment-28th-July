@@ -36,9 +36,16 @@ Video Link:
 
 (Add YouTube or Google Drive link here)
 
-## Sample Output
+## Sample Screenshots
 
-(Add screenshot here)
+### Application View
+
+![Application View](Application_view.png)
+
+### PDF Print Preview
+
+![PDF Preview](pdf_preview.png)
+
 
 ## Author
 
