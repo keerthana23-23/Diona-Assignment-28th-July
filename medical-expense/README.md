@@ -45,7 +45,7 @@ https://drive.google.com/file/d/1mahh5iXh2PHsXw-RbpjlD3c17jjWG7fg/view?usp=drive
 
 ### PDF Print Preview
 
-![PDF Preview](pdf_preview.png)
+![PDF Preview](PDF_Preview.png)
 
 
 ## Author
