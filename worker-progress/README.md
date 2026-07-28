@@ -34,15 +34,15 @@ The form displays claim information and worker progress details using sample dat
 
 ### Application View
 
-![Application View](application-view.png)
+![Application View](application_view.png)
 
 ### PDF Print Preview
 
-![PDF Preview](pdf-preview.png)
+![PDF Preview](pdf_preview.png)
 
 ## Demo Video
 
-Video Link:
+Video Link: https://drive.google.com/file/d/12qAed_C27fT86CbbHjwya12b5H65Artl/view?usp=drive_link
 
 (Paste your YouTube or Google Drive link here)
 
