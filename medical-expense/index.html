@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WCB – Medical &amp; Travel Expense Request</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+         <!-- ===== DATA CONTROLS (top bar) ===== -->
+    <div class="controls" id="controls">
+    <label>📄 Data set:</label>
+       <select id="datasetSelector">
+         <option value="default"> Dataset 1 </option>
+         <option value="multi"> Dataset 2 </option>
+         <option value="sparse"> Dataset 3 </option>
+       </select>
+    <span class="badge" id="dataBadge">Showing 1 item per section</span> </div>
+         <!-- ===== DOCUMENT ===== -->
+	
+    <div class="document-wrapper" id="document">
+
+        <!-- TOP HEADER: logo left, contact right -->
+        <header class="form-header">
+
+    <div class="logo-section">
+
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4b/WCB_of_Manitoba_logo.svg"
+            alt="WCB Manitoba Logo"
+            class="wcb-logo">
+
+    </div>
+
+    <div class="address-section">
+
+        <p>333 Broadway</p>
+
+        <p>Winnipeg, MB R3C 4W3</p>
+
+        <p>Phone: (204) 954-4321</p>
+
+        <p>Toll Free: 1-855-954-4321</p>
+
+        <p>wcb.mb.ca</p>
+
+    </div>
+
+    <div class="title-section">
+
+        <h1>
+            Medical &amp; Travel Expense<br>
+            Request
+        </h1>
+
+        <div class="claim-box">
+
+            Claim No.
+            <span id="claimNumber"></span>
+
+        </div>
+
+    </div>
+
+</header>
+
+        <p class="intro-text">
+
+    <span id="workerName"></span>
+
+    requested reimbursement for the following
+    medical and/or travel expenses:
+
+</p>
+
+
+        <!-- ===== SECTION: Prescription Drugs ===== -->
+        <h2 class="section-title">Prescription Drugs</h2>
+        <div class="table-wrap">
+            <table id="prescriptionTable">
+                <thead>
+                    <tr>
+                        <th>Drug Name</th>
+                        <th>Prescription Date</th>
+                        <th>Date Purchased</th>
+                        <th>Healthcare Provider</th>
+                        <th>Paid Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="prescriptionBody">
+                    <!-- injected by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION: Over-the-Counter Drugs ===== -->
+        <h2 class="section-title">Over-the-Counter Drugs</h2>
+        <div class="table-wrap">
+            <table id="otcTable">
+                <thead>
+                    <tr>
+                        <th>Drug Name</th>
+                        <th>Date Purchased</th>
+                        <th>Paid Amount</th>
+                        <th>Seller</th>
+                        <th>Reason</th>
+                    </tr>
+                </thead>
+                <tbody id="otcBody">
+                    <!-- injected by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION: Bandages, Braces or Other Medical Supplies ===== -->
+        <h2 class="section-title">Bandages, Braces or Other Medical Supplies</h2>
+        <div class="table-wrap">
+            <table id="suppliesTable">
+                <thead>
+                    <tr>
+                        <th>Item Purchased</th>
+                        <th>Date Purchased</th>
+                        <th>Prescribed?</th>
+                        <th>Healthcare Provider</th>
+                        <th>Paid Amount</th>
+                        <th>Seller</th>
+                    </tr>
+                </thead>
+                <tbody id="suppliesBody">
+                    <!-- injected by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION: Parking ===== -->
+        <h2 class="section-title">Parking for Medical Appointments</h2>
+        <div class="table-wrap">
+            <table id="parkingTable">
+                <thead>
+                    <tr>
+                        <th>Address</th>
+                        <th>Date</th>
+                        <th>Paid Amount</th>
+                        <th>Meter Used?</th>
+                        <th>Meter Number</th>
+                    </tr>
+                </thead>
+                <tbody id="parkingBody">
+                    <!-- injected by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION: Mileage ===== -->
+        <h2 class="section-title">Mileage to Medical Appointments</h2>
+
+        <div class="mileage-note">
+            The WCB will generally reimburse only those transportation costs which are in excess
+            of costs that would be incurred by the worker while travelling to and from work.
+        </div>
+
+        <div class="table-wrap">
+            <table id="mileageTable">
+                <thead>
+                    <tr>
+                        <th>Appointment Date</th>
+                        <th>Healthcare Provider Address</th>
+                        <th>Workplace Address</th>
+                        <th>km (Round Trip)</th>
+                    </tr>
+                </thead>
+                <tbody id="mileageBody">
+                    <!-- injected by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== PRIVACY NOTICE ===== -->
+        <div class="privacy-notice">
+            I understand that the Privacy Notice applies to the personal information collected in this document.
+        </div>
+
+        <!-- ===== FOOTER (page number only) ===== -->
+        <footer class="doc-footer">
+        <div class="footer-left"> Worker App ID: <span id="workerAppId"></span> </div>
+        <div class="footer-right"> Submitted: <span id="submittedDate"></span> <br>
+            <span class="page-num" id="pageNumber"> Page 1 of 1 </span> </div>
+      </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
